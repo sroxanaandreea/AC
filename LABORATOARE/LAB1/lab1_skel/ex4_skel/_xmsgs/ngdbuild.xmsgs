@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="error" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;a[0]&quot; LOC = L13;&gt; [adder4.ucf(4)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">a[0]</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;a[0]&quot; LOC = L13;&gt; [adder4.ucf(4)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="error" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;a[1]&quot; LOC = L14;&gt; [adder4.ucf(5)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">a[1]</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;a[1]&quot; LOC = L14;&gt; [adder4.ucf(5)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="error" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;a[2]&quot; LOC = H18;&gt; [adder4.ucf(6)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">a[2]</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;a[2]&quot; LOC = H18;&gt; [adder4.ucf(6)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="error" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;a[3]&quot; LOC = N17;&gt; [adder4.ucf(7)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">a[3]</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;a[3]&quot; LOC = N17;&gt; [adder4.ucf(7)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="error" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;b[0]&quot; LOC = V4;&gt; [adder4.ucf(8)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">b[0]</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;b[0]&quot; LOC = V4;&gt; [adder4.ucf(8)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="error" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;b[1]&quot; LOC = H13;&gt; [adder4.ucf(9)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">b[1]</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;b[1]&quot; LOC = H13;&gt; [adder4.ucf(9)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="error" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;b[2]&quot; LOC = K17;&gt; [adder4.ucf(10)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">b[2]</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;b[2]&quot; LOC = K17;&gt; [adder4.ucf(10)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="error" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;b[3]&quot; LOC = D18;&gt; [adder4.ucf(11)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">b[3]</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;b[3]&quot; LOC = D18;&gt; [adder4.ucf(11)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="error" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;sum[0]&quot; LOC = F12;&gt; [adder4.ucf(13)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">sum[0]</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;sum[0]&quot; LOC = F12;&gt; [adder4.ucf(13)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="error" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;sum[1]&quot; LOC = E12;&gt; [adder4.ucf(14)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">sum[1]</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;sum[1]&quot; LOC = E12;&gt; [adder4.ucf(14)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="error" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;sum[2]&quot; LOC = E11;&gt; [adder4.ucf(15)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">sum[2]</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;sum[2]&quot; LOC = E11;&gt; [adder4.ucf(15)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="error" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;sum[3]&quot; LOC = F11;&gt; [adder4.ucf(16)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">sum[3]</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;sum[3]&quot; LOC = F11;&gt; [adder4.ucf(16)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="error" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;a[3]&quot; PULLDOWN;&gt; [adder4.ucf(21)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">a[3]</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="error" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;a[2]&quot; PULLDOWN;&gt; [adder4.ucf(22)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">a[2]</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="error" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;a[1]&quot; PULLDOWN;&gt; [adder4.ucf(23)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">a[1]</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="error" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;a[0]&quot; PULLDOWN;&gt; [adder4.ucf(24)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">a[0]</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="error" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;b[3]&quot; PULLDOWN;&gt; [adder4.ucf(25)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">b[3]</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="error" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;b[2]&quot; PULLDOWN;&gt; [adder4.ucf(26)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">b[2]</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="error" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;b[1]&quot; PULLDOWN;&gt; [adder4.ucf(27)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">b[1]</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="error" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;b[0]&quot; PULLDOWN;&gt; [adder4.ucf(28)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">b[0]</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+</messages>
+

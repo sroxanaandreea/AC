@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/Roxana/OneDrive - Universitatea Politehnica Bucuresti/ANUL III/SEMSTRUL I/AC/LAB1/lab1_skel/ex1_skel/half_adder.xst" -ofn "C:/Users/Roxana/OneDrive - Universitatea Politehnica Bucuresti/ANUL III/SEMSTRUL I/AC/LAB1/lab1_skel/ex1_skel/half_adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc full_adder.ucf -p xc3s500e-fg320-4 "half_adder.ngc" half_adder.ngd  
+xst -intstyle ise -ifn "C:/Users/Roxana/OneDrive - Universitatea Politehnica Bucuresti/ANUL III/SEMSTRUL I/AC/LAB1/lab1_skel/ex1_skel/half_adder.xst" -ofn "C:/Users/Roxana/OneDrive - Universitatea Politehnica Bucuresti/ANUL III/SEMSTRUL I/AC/LAB1/lab1_skel/ex1_skel/half_adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc full_adder.ucf -p xc3s500e-fg320-4 "half_adder.ngc" half_adder.ngd  
+xst -intstyle ise -ifn "C:/Users/Roxana/OneDrive - Universitatea Politehnica Bucuresti/ANUL III/SEMSTRUL I/AC/LAB1/lab1_skel/ex1_skel/half_adder.xst" -ofn "C:/Users/Roxana/OneDrive - Universitatea Politehnica Bucuresti/ANUL III/SEMSTRUL I/AC/LAB1/lab1_skel/ex1_skel/half_adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc full_adder.ucf -p xc3s500e-fg320-4 "half_adder.ngc" half_adder.ngd  

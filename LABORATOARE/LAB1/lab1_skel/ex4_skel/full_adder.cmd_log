@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "C:/Users/Roxana/OneDrive - Universitatea Politehnica Bucuresti/ANUL III/SEMSTRUL I/AC/LABORATOARE/LAB1/lab1_skel/ex4_skel/full_adder.xst" -ofn "C:/Users/Roxana/OneDrive - Universitatea Politehnica Bucuresti/ANUL III/SEMSTRUL I/AC/LABORATOARE/LAB1/lab1_skel/ex4_skel/full_adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc adder4.ucf -p xc3s500e-fg320-4 "full_adder.ngc" full_adder.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc adder4.ucf -p xc3s500e-fg320-4 "full_adder.ngc" full_adder.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc adder4.ucf -p xc3s500e-fg320-4 "full_adder.ngc" full_adder.ngd  
