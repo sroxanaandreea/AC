@@ -1,3 +1,5 @@
+## Tema 1 
+
 In modulul temperature_top am realizat conexiunile necesare intre module 
 pentru o buna functionalitate a acestora. Am luat iesirile modulelor sensors_input si division
 ca si wire-uri pentru conectarea modulelor. Am luat un wire intermediar Dir pentru a extinde valoarea de pe 8 biti la valoarea pe 16.
