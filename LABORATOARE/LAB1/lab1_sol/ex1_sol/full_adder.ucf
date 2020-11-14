@@ -1,0 +1,14 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "a" LOC = L13;
+NET "b" LOC = L14;
+NET "c_in" LOC = H18;
+NET "sum" LOC = F12;
+NET "c_out" LOC = E12;
+
+# PlanAhead Generated IO constraints 
+
+NET "a" PULLDOWN;
+NET "b" PULLDOWN;
+NET "c_in" PULLDOWN;

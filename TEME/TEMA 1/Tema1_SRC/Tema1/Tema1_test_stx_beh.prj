@@ -1,0 +1,6 @@
+verilog isim_temp "sensors_input.v"
+verilog isim_temp "output_display.v"
+verilog isim_temp "division.v"
+verilog isim_temp "temperature_top.v"
+verilog isim_temp "Tema1_test.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

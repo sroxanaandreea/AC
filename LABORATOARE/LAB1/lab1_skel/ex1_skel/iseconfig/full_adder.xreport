@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2020-10-16T15:26:23</DateModified>
+  <DateModified>2020-10-20T17:30:57</DateModified>
   <ModuleName>full_adder</ModuleName>
   <SummaryTimeStamp>2020-10-13T16:36:33</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/Roxana/OneDrive - Universitatea Politehnica Bucuresti/ANUL III/SEMSTRUL I/AC/LABORATOARE/LAB1/lab1_skel/ex1_skel/iseconfig/full_adder.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Roxana/OneDrive - Universitatea Politehnica Bucuresti/ANUL III/SEMSTRUL I/AC/LABORATOARE/LAB1/lab1_skel/ex1_skel\</ImplementationReportsDirectory>
+  <SavedFilePath>D:/OneDrive - Universitatea Politehnica Bucuresti/ANUL III/SEMSTRUL I/AC/LABORATOARE/LAB1/lab1_skel/ex1_skel/iseconfig/full_adder.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>D:/OneDrive - Universitatea Politehnica Bucuresti/ANUL III/SEMSTRUL I/AC/LABORATOARE/LAB1/lab1_skel/ex1_skel\</ImplementationReportsDirectory>
   <DateInitialized>2020-10-13T16:36:33</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

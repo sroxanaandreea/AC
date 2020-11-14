@@ -1,0 +1,2 @@
+-10.00: failed to synthesize, check synthesis log for errors 	
+-10.00: failed to run tester, check compilation and execution logs 

@@ -1,0 +1,59 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to D:/OneDrive - Universitatea Politehnica Bucuresti/ANUL III/SEMSTRUL I/AC/LABORATOARE/LAB3/ex1_skel/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to D:/OneDrive - Universitatea Politehnica Bucuresti/ANUL III/SEMSTRUL I/AC/LABORATOARE/LAB3/ex1_skel/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "ba.v" in library work
+ERROR:HDLCompilers:28 - "ba.v" line 14 'counter' has not been declared
+ERROR:HDLCompilers:26 - "ba.v" line 18 unexpected token: 'counter'
+ERROR:HDLCompilers:26 - "ba.v" line 18 expecting 'end', found '+'
+ERROR:HDLCompilers:26 - "ba.v" line 18 unexpected token: '1'
+ERROR:HDLCompilers:26 - "ba.v" line 18 expecting ':', found ';'
+ERROR:HDLCompilers:28 - "ba.v" line 21 'counter' has not been declared
+ERROR:HDLCompilers:26 - "ba.v" line 21 unexpected token: '1'
+ERROR:HDLCompilers:26 - "ba.v" line 21 expecting ':', found ';'
+ERROR:HDLCompilers:26 - "ba.v" line 25 unexpected token: 'counter'
+ERROR:HDLCompilers:26 - "ba.v" line 25 expecting 'end', found '+'
+ERROR:HDLCompilers:26 - "ba.v" line 25 unexpected token: '1'
+ERROR:HDLCompilers:26 - "ba.v" line 25 expecting ':', found ';'
+ERROR:HDLCompilers:28 - "ba.v" line 28 'counter' has not been declared
+ERROR:HDLCompilers:26 - "ba.v" line 28 unexpected token: '1'
+ERROR:HDLCompilers:26 - "ba.v" line 28 expecting ':', found ';'
+ERROR:HDLCompilers:26 - "ba.v" line 33 unexpected token: 'counter'
+ERROR:HDLCompilers:26 - "ba.v" line 33 expecting 'end', found '+'
+ERROR:HDLCompilers:26 - "ba.v" line 33 unexpected token: '1'
+ERROR:HDLCompilers:26 - "ba.v" line 33 expecting ':', found ';'
+ERROR:HDLCompilers:28 - "ba.v" line 36 'counter' has not been declared
+ERROR:HDLCompilers:26 - "ba.v" line 36 unexpected token: '1'
+ERROR:HDLCompilers:26 - "ba.v" line 36 expecting ':', found ';'
+ERROR:HDLCompilers:26 - "ba.v" line 40 unexpected token: 'counter'
+ERROR:HDLCompilers:26 - "ba.v" line 40 expecting 'end', found '+'
+ERROR:HDLCompilers:26 - "ba.v" line 40 unexpected token: '1'
+ERROR:HDLCompilers:26 - "ba.v" line 40 expecting ':', found ';'
+ERROR:HDLCompilers:28 - "ba.v" line 43 'counter' has not been declared
+ERROR:HDLCompilers:26 - "ba.v" line 43 unexpected token: '1'
+ERROR:HDLCompilers:26 - "ba.v" line 43 expecting ':', found ';'
+Module <ba> compiled
+Analysis of file <"ba.prj"> failed.
+--> 
+
+Total memory usage is 4468272 kilobytes
+
+Number of errors   :   29 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

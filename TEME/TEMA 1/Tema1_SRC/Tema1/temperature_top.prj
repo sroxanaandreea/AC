@@ -1,0 +1,4 @@
+verilog work "sensors_input.v"
+verilog work "output_display.v"
+verilog work "division.v"
+verilog work "temperature_top.v"

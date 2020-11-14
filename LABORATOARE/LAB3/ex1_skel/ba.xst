@@ -1,0 +1,5 @@
+set -tmpdir "D:/OneDrive - Universitatea Politehnica Bucuresti/ANUL III/SEMSTRUL I/AC/LABORATOARE/LAB3/ex1_skel/xst/projnav.tmp"
+set -xsthdpdir "D:/OneDrive - Universitatea Politehnica Bucuresti/ANUL III/SEMSTRUL I/AC/LABORATOARE/LAB3/ex1_skel/xst"
+elaborate
+-ifn ba.prj
+-ifmt mixed

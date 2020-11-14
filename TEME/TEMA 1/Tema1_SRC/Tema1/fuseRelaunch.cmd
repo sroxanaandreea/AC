@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "D:/OneDrive - Universitatea Politehnica Bucuresti/ANUL III/SEMSTRUL I/AC/TEME/TEMA 1/Tema1_SRC/Tema1/Tema1_test_isim_beh.exe" -prj "D:/OneDrive - Universitatea Politehnica Bucuresti/ANUL III/SEMSTRUL I/AC/TEME/TEMA 1/Tema1_SRC/Tema1/Tema1_test_beh.prj" "work.Tema1_test" "work.glbl" 
