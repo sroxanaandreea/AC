@@ -1,0 +1,29 @@
+Command line:
+   decryption_regfile_test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  59063
+
+Fri Dec 04 15:19:46 2020
+
+
+ Elaboration Time: 0.015625 sec
+
+ Current Memory Usage: 5150.03 Meg
+
+ Total Signals          : 26
+ Total Nets             : 123
+ Total Signal Drivers   : 18
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 22
+ Total Traceable Variables  : 33
+ Total Scalar Nets and Variables : 377
+Total Line Count : 82
+
+ Total Simulation Time: 0.078125 sec
+
+ Current Memory Usage: 5150.03 Meg
+
+Fri Dec 04 15:19:54 2020
+

@@ -1,0 +1,61 @@
+ISim log file
+Running: tester.exe -intstyle ise -tclbatch ..\..\..\scripts\gui.tcl -gui 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 516096 ms
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Access 0 Reading address: 0x10
+Access 1 Writting address: 0x10 with value 0xbca2
+Access 2 Reading address: 0x12
+Access 3 Writting address: 0x14 with value 0x234f
+Access 4 Reading address: 0x14
+Access 5 Writting address: 0x10 with value 0x3267
+Access 6 Writting address: 0x12 with value 0x0213
+Access 7 Writting address: 0x14 with value 0x891f
+Access 8 Reading address: 0x00
+Access 9 Reading address: 0x12
+Access 10 Writting address: 0x00 with value 0xa56c
+Access 11 Writting address: 0x12 with value 0x23a9
+Access 12 Reading address: 0x00
+Access 13 Reading address: 0x12
+Access 14 Reading address: 0x14
+Access 15 Reading address: 0x10
+Access 16 Reading address: 0x64
+Access 17 Writting address: 0xff with value 0x4988
+Access 18 Reading address: 0x01
+Access 19 Writting address: 0x09 with value 0x1648
+Access 20 Reading address: 0x11
+Access 21 Writting address: 0x13 with value 0x1645
+Access 22 Writting address: 0x15 with value 0x6468
+[Access PASSED] Access 0 was checked correctly 
+[Access PASSED] Access 1 was checked correctly 
+[Access PASSED] Access 2 was checked correctly 
+[Access PASSED] Access 3 was checked correctly 
+[Access PASSED] Access 4 was checked correctly 
+[Access PASSED] Access 5 was checked correctly 
+[Access PASSED] Access 6 was checked correctly 
+[Access PASSED] Access 7 was checked correctly 
+[Access PASSED] Access 8 was checked correctly 
+[Access PASSED] Access 9 was checked correctly 
+[Access PASSED] Access 10 was checked correctly 
+[Access PASSED] Access 11 was checked correctly 
+[Access PASSED] Access 12 was checked correctly 
+[Access PASSED] Access 13 was checked correctly 
+[Access PASSED] Access 14 was checked correctly 
+[Access PASSED] Access 15 was checked correctly 
+[Access PASSED] Access 16 was checked correctly 
+[Access PASSED] Access 17 was checked correctly 
+[Access PASSED] Access 18 was checked correctly 
+[Access PASSED] Access 19 was checked correctly 
+[Access PASSED] Access 20 was checked correctly 
+[Access PASSED] Access 21 was checked correctly 
+[Access PASSED] Access 22 was checked correctly 
+test ok
+Stopped at time : 1430 ns : File "D:/OneDrive - Universitatea Politehnica Bucuresti/ANUL III/SEMSTRUL I/AC/TEME/TEMA 2/tema2_register_tester/build/bin/tests/complex_register_access/test.v" Line 109

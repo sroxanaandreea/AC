@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "D:/OneDrive - Universitatea Politehnica Bucuresti/ANUL III/SEMSTRUL I/AC/TEME/TEMA 2/decryption_skel/decryption_top.xst" -ofn "D:/OneDrive - Universitatea Politehnica Bucuresti/ANUL III/SEMSTRUL I/AC/TEME/TEMA 2/decryption_skel/decryption_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6vlx75t-ff484-1 "decryption_top.ngc" decryption_top.ngd  
+map -intstyle ise -p xc6vlx75t-ff484-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o decryption_top_map.ncd decryption_top.ngd decryption_top.pcf 

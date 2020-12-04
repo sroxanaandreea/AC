@@ -1,0 +1,16 @@
+INFO:sim:172 - Generating IP...
+Applying current project options...
+Finished applying current project options.
+Customizing IP...
+Qt: Untested Windows version 6.2 detected!
+Release 14.7 - Xilinx CORE Generator IP GUI Launcher P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+WARNING:coreutil - WARNING:sim:192 - Xco Parameter changed from
+   (Coe_File,./ram.coe) to
+      (Coe_File,.\ram.coe) during Recustomization.
+Designer: An error has occurred while reading the ui file at line 21, column 10:
+Unexpected element grid
+WARNING:sim:248 - Inconsistent Custom GUI detected. Loading Debug GUI by
+   default.
+Cancelled Customization.
+Wrote CGP file for project 'ram'.
