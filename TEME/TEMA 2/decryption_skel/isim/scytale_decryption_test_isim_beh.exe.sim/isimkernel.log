@@ -1,0 +1,29 @@
+Command line:
+   scytale_decryption_test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  57347
+
+Thu Dec 10 16:26:40 2020
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 5150.1 Meg
+
+ Total Signals          : 22
+ Total Nets             : 50
+ Total Signal Drivers   : 14
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 18
+ Total Traceable Variables  : 36
+ Total Scalar Nets and Variables : 791
+Total Line Count : 86
+
+ Total Simulation Time: 0.0625 sec
+
+ Current Memory Usage: 5150.1 Meg
+
+Thu Dec 10 16:26:46 2020
+

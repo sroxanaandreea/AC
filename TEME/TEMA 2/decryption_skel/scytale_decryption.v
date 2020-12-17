@@ -44,7 +44,57 @@ module scytale_decryption#(
     );
 
 // TODO: Implement Scytale Decryption here
+reg [7:0] a[0:50];
+integer i, k, j;
+reg [15:0] p;
 
+
+
+always @(posedge clk) begin
+	data_o <= 0;
+	valid_o <= 0;
+	busy <= 0;
+	//i <= 0; 
+	//j <= 0;
+	p <= key_M * key_N;
+	
+	if( rst_n == 0)
+	begin
+		data_o <= 0;
+		valid_o <= 0;
+		busy <= 0;
+	end
+	
+	if( data_i == START_DECRYPTION_TOKEN)
+	begin
+		//if( valid_i == 0 ) begin
+				data_o <= a[i];
+				valid_o <= 1;
+				busy <= 1;
+				i <= i + key_M ;
+				if ( i > p) begin
+					i <= j + 1;
+					//i <= j;
+				end
+		 //end
+	 end
+	
+	if (data_i != START_DECRYPTION_TOKEN ) begin
+		if ( valid_i == 1) begin
+			//if ( i< MAX_NOF_CHARS) begin
+				a[i] <=  data_i;
+				i <= i + 1;
+				//n <= n + 1;
+				busy <= 0;
+				valid_o <= 0;
+			//end
+		end
+
+		else begin
+			i <= 0;
+		end
+	end
+end
 
 
 endmodule

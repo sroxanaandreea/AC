@@ -1,0 +1,3 @@
+verilog work "..\..\caesar_decryption.v"
+verilog work "..\..\scytale_decryption.v"
+verilog work "..\..\zigzag_decryption.v"

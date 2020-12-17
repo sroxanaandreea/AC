@@ -1,0 +1,115 @@
+ISim log file
+Running: tester.exe -intstyle ise -tclbatch ..\..\..\scripts\gui.tcl -gui 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 516096 ms
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Decryption 0 
+Testing key: 20
+Testing data: U b U U f Y a Y f Y g ] d Y f Y 
+Decryption 1 
+Testing key: 19
+Testing data: j { å 3 Ü Ç 3 Ü x Ö | Ç à Ü R 
+Decryption 2 
+Testing key: 6
+Testing data: O & g s & m u o t m & z u & s g q k & n o s & g t & u l l k x & n k & i g t - z & x k l { y k 4 
+Decryption 3 
+Testing key: 31
+Testing data: l Ä ò ? ì á Ñ ? e é ë Ç Ñ ? Å Ñ ? ñ à ì á ? ò é î M 
+Decryption 4 
+Testing key: 27
+Testing data: d ; á ä ë Ä ; è É Ä ; é à Ä á á ; ä Å ; â | ã | á à ; Ñ â ; è É Ä ; à ä ç â Ñ â Ç I 
+Decryption 5 
+Testing key: 10
+Testing data: ^ r o * } ~  p p * ~ r k ~ * n | o k w } * k | o * w k n o * y p 8 
+Decryption 6 
+Testing key: 9
+Testing data: ] q n { n 0 | ) w x ) y u j l n ) u r t n ) q x v n 7 
+Decryption 7 
+Testing key: 25
+Testing data: l Å à ê 9 Ü ~ 9 ç Å ~ 9 Ü à á ~ í : 
+Decryption 8 
+Testing key: 2
+Testing data: [ q w " e c p ) v " j c p f n g " v j g " v t w v j # 
+Decryption 9 
+Testing key: 15
+Testing data: W ~ Ñ Ç É ~ } ; / Ü t / w p Ö t / p /  Å ~ q { t | = 
+Decryption 10 
+Testing key: 12
+Testing data: W q q | , Ö { Å ~ , r ~ u q z p  , o x {  q 8 , n Å Ä , Ö { Å ~ , q z q y u q  , o x {  q ~ 
+Decryption 11 
+Testing key: 9
+Testing data: Q j | } j ) u j )  r | } j 5 ) k j k Ç 7 
+Decryption 12 
+Testing key: 28
+Testing data: _ } é å Å < Ä Ö Å â J < o Å Ö ñ Å < ê Ñ Å < Ä } ï = 
+Decryption 13 
+Testing key: 23
+Testing data: d x ~ Ä z 7 d Ä â â Ü â 7 Ü Ö 7 ã  | 7 é x É É 
+Decryption 14 
+Testing key: 20
+Testing data: k | É 4 } á 4 à | y 4 z u } Ü y á à 4 É Ç y 4 É z 4 u Ä Ä S 
+Decryption 15 
+Testing key: 16
+Testing data: g q à 0  ~ < 0 á q à 0  v v > 
+Decryption 16 
+Testing key: 9
+Testing data: ] q n ) o r { | } ) { ~ u n ) x o ) O r p q } ) L u ~ k ) r | C 
+Decryption 17 
+Testing key: 21
+Testing data: n Ñ ä 5 y Ñ 5 É Ñ â 5 â v Å Ä 5 v w Ñ ä â 5 [ ~ | } â 5 X Å ä w 
+Decryption 18 
+Testing key: 1
+Testing data: J ( n ! h p j o h ! u p ! n b l f ! i j n ! b o ! p g g f s ! i f ! d b o ( u ! s f g v t f 
+Decryption 19 
+Testing key: 15
+Testing data: c ~ É ~ ; / X 6 Ö t / p / u t t { x } v / Ü t 6 Å t / } ~ É / x } / Z p } Ç p Ç / p } à | ~ Å t 
+Decryption 20 
+Testing key: 31
+Testing data: d M s M ? è á é ç Ñ ? á é å Ñ M 
+Decryption 21 
+Testing key: 4
+Testing data: Q } $ r e q i $ m w $ F s r h 2 $ N e q i w $ F s r h 2 
+Decryption 22 
+Testing key: 17
+Testing data: V } v ~ v  Ö r É ä = 1 ~ ä 1 u v r É 1 h r Ö Ñ Ä  ? 
+Decryption 23 
+Testing key: 31
+Testing data: h F ã ã ? Ü Ñ ì ? ò é î ? å ò ? è ë Ñ ì ì ò K ? Ä ç É ? ò é î ë ? ã à ì ì ã Ñ ? É é Ü ? ì é é @ 
+Decryption 24 
+Testing key: 10
+Testing data: V s p o * s } * v s u o * k * l y Ç * y p * m r y m y v k ~ o } 
+[PASSED] Decryption 0 was done correctly 
+[PASSED] Decryption 1 was done correctly 
+[PASSED] Decryption 2 was done correctly 
+[PASSED] Decryption 3 was done correctly 
+[PASSED] Decryption 4 was done correctly 
+[PASSED] Decryption 5 was done correctly 
+[PASSED] Decryption 6 was done correctly 
+[PASSED] Decryption 7 was done correctly 
+[PASSED] Decryption 8 was done correctly 
+[PASSED] Decryption 9 was done correctly 
+[PASSED] Decryption 10 was done correctly 
+[PASSED] Decryption 11 was done correctly 
+[PASSED] Decryption 12 was done correctly 
+[PASSED] Decryption 13 was done correctly 
+[PASSED] Decryption 14 was done correctly 
+[PASSED] Decryption 15 was done correctly 
+[PASSED] Decryption 16 was done correctly 
+[PASSED] Decryption 17 was done correctly 
+[PASSED] Decryption 18 was done correctly 
+[PASSED] Decryption 19 was done correctly 
+[PASSED] Decryption 20 was done correctly 
+[PASSED] Decryption 21 was done correctly 
+[PASSED] Decryption 22 was done correctly 
+[PASSED] Decryption 23 was done correctly 
+[PASSED] Decryption 24 was done correctly 
+test ok
+Stopped at time : 8035 ns : File "D:/OneDrive - Universitatea Politehnica Bucuresti/ANUL III/SEMSTRUL I/AC/TEME/TEMA 2/tema2_task2_checker/build/bin/tester/tester.v" Line 166

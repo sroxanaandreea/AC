@@ -47,24 +47,25 @@ module decryption_regfile #(
 
 	
 	always @(posedge clk) begin
+		//Setez valorile initiale pentru done si error cu 1.
 		error <= 0;
 		done <= 0;
-		if(rst_n == 0)
+		if(rst_n == 0)					//Verific daca rst_n este 0, in acest caz valorile de reset ale registrilog devin cele atribuite in pdf.
 		begin
 			select <= 16'h0000;
 			caesar_key <= 16'h0000;
 			scytale_key <= 16'hffff;
 			zigzag_key <= 16'h0002;
 		end
-		case(addr) 
+		case(addr) 						//Verific daca adresele registrilor sunt cele date.
 			8'h00: begin
-					 if( read == 1) 
+					 if( read == 1) 	//Verific data read-ul este 1, daca da, citesc din registru.
 					 begin
 						rdata <= select;
 						done <= 1;
 					 end
 					 
-					 if(write == 1)
+					 if(write == 1)		//Verific daca write-ul este 1, daca da, scriu in registru.
 					 begin
 						select <= wdata[1:0];
 						done <= 1;

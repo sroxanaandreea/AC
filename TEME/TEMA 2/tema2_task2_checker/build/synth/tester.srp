@@ -1,0 +1,351 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> WARNING:Xst:1583 - You are using an internal switch '-use_new_parser'.
+WARNING:Xst:3152 - You have chosen to run a version of XST which is not the default solution
+   for the specified device family. You are free to use it in order to take
+   advantage of its enhanced HDL parsing/elaboration capabilities. However,
+   please be aware that you may be impacted by  language support differences.
+   This version may also result in circuit performance and device utilization
+   differences for your particular design. You can always revert back to the
+   default XST solution by setting the "use_new_parser" option to value "no" 
+   on the XST command line or in the XST process properties panel.
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "tester.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "tester"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Use New Parser                     : yes
+Top Module Name                    : caesar_decryption
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\OneDrive - Universitatea Politehnica Bucuresti\ANUL III\SEMSTRUL I\AC\TEME\TEMA 2\tema2_task2_checker\caesar_decryption.v" into library work
+Parsing module <caesar_decryption>.
+Analyzing Verilog file "D:\OneDrive - Universitatea Politehnica Bucuresti\ANUL III\SEMSTRUL I\AC\TEME\TEMA 2\tema2_task2_checker\scytale_decryption.v" into library work
+Parsing module <scytale_decryption>.
+Analyzing Verilog file "D:\OneDrive - Universitatea Politehnica Bucuresti\ANUL III\SEMSTRUL I\AC\TEME\TEMA 2\tema2_task2_checker\zigzag_decryption.v" into library work
+Parsing module <zigzag_decryption>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <caesar_decryption>.
+WARNING:HDLCompiler:413 - "D:\OneDrive - Universitatea Politehnica Bucuresti\ANUL III\SEMSTRUL I\AC\TEME\TEMA 2\tema2_task2_checker\caesar_decryption.v" Line 58: Result of 16-bit expression is truncated to fit in 8-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <caesar_decryption>.
+    Related source file is "D:\OneDrive - Universitatea Politehnica Bucuresti\ANUL III\SEMSTRUL I\AC\TEME\TEMA 2\tema2_task2_checker\caesar_decryption.v".
+        D_WIDTH = 8
+        KEY_WIDTH = 16
+WARNING:Xst:647 - Input <rst_n> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <valid_o>.
+    Found 8-bit register for signal <data_o>.
+    Found 8-bit subtractor for signal <GND_1_o_key[15]_sub_4_OUT<7:0>> created at line 58.
+    WARNING:Xst:2404 -  FFs/Latches <busy<0:0>> (without init value) have a constant value of 0 in block <caesar_decryption>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   9 D-type flip-flop(s).
+Unit <caesar_decryption> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 8-bit subtractor                                      : 1
+# Registers                                            : 2
+ 1-bit register                                        : 1
+ 8-bit register                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 8-bit subtractor                                      : 1
+# Registers                                            : 9
+ Flip-Flops                                            : 9
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <caesar_decryption> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block caesar_decryption, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 9
+ Flip-Flops                                            : 9
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : tester.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 26
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 8
+#      MUXCY                       : 7
+#      VCC                         : 1
+#      XORCY                       : 8
+# FlipFlops/Latches                : 9
+#      FD                          : 1
+#      FDR                         : 8
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 27
+#      IBUF                        : 17
+#      OBUF                        : 10
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                        4  out of   4656     0%  
+ Number of 4 input LUTs:                  9  out of   9312     0%  
+ Number of IOs:                          37
+ Number of bonded IOBs:                  28  out of    232    12%  
+    IOB Flip Flops:                       9
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 9     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 4.447ns
+   Maximum output required time after clock: 4.283ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 109 / 17
+-------------------------------------------------------------------------
+Offset:              4.447ns (Levels of Logic = 10)
+  Source:            data_i<0> (PAD)
+  Destination:       data_o_7 (FF)
+  Destination Clock: clk rising
+
+  Data Path: data_i<0> to data_o_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.218   0.595  data_i_0_IBUF (data_i_0_IBUF)
+     LUT2:I0->O            1   0.704   0.000  Msub_GND_1_o_key[15]_sub_4_OUT<7:0>_lut<0> (Msub_GND_1_o_key[15]_sub_4_OUT<7:0>_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  Msub_GND_1_o_key[15]_sub_4_OUT<7:0>_cy<0> (Msub_GND_1_o_key[15]_sub_4_OUT<7:0>_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  Msub_GND_1_o_key[15]_sub_4_OUT<7:0>_cy<1> (Msub_GND_1_o_key[15]_sub_4_OUT<7:0>_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Msub_GND_1_o_key[15]_sub_4_OUT<7:0>_cy<2> (Msub_GND_1_o_key[15]_sub_4_OUT<7:0>_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Msub_GND_1_o_key[15]_sub_4_OUT<7:0>_cy<3> (Msub_GND_1_o_key[15]_sub_4_OUT<7:0>_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Msub_GND_1_o_key[15]_sub_4_OUT<7:0>_cy<4> (Msub_GND_1_o_key[15]_sub_4_OUT<7:0>_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Msub_GND_1_o_key[15]_sub_4_OUT<7:0>_cy<5> (Msub_GND_1_o_key[15]_sub_4_OUT<7:0>_cy<5>)
+     MUXCY:CI->O           0   0.059   0.000  Msub_GND_1_o_key[15]_sub_4_OUT<7:0>_cy<6> (Msub_GND_1_o_key[15]_sub_4_OUT<7:0>_cy<6>)
+     XORCY:CI->O           1   0.804   0.000  Msub_GND_1_o_key[15]_sub_4_OUT<7:0>_xor<7> (GND_1_o_key[15]_sub_4_OUT<7>)
+     FDR:D                     0.308          data_o_7
+    ----------------------------------------
+    Total                      4.447ns (3.852ns logic, 0.595ns route)
+                                       (86.6% logic, 13.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 9 / 9
+-------------------------------------------------------------------------
+Offset:              4.283ns (Levels of Logic = 1)
+  Source:            data_o_7 (FF)
+  Destination:       data_o<7> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: data_o_7 to data_o<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.591   0.420  data_o_7 (data_o_7)
+     OBUF:I->O                 3.272          data_o_7_OBUF (data_o<7>)
+    ----------------------------------------
+    Total                      4.283ns (3.863ns logic, 0.420ns route)
+                                       (90.2% logic, 9.8% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.24 secs
+ 
+WARNING:Xst:3152 - You have chosen to run a version of XST which is not the default solution
+   for the specified device family. You are free to use it in order to take
+   advantage of its enhanced HDL parsing/elaboration capabilities. However,
+   please be aware that you may be impacted by  language support differences.
+   This version may also result in circuit performance and device utilization
+   differences for your particular design. You can always revert back to the
+   default XST solution by setting the "use_new_parser" option to value "no" 
+   on the XST command line or in the XST process properties panel.
+--> 
+
+Total memory usage is 4470260 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
