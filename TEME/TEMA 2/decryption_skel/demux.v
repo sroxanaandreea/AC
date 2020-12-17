@@ -48,6 +48,10 @@ module demux #(
 	
 	
 	// TODO: Implement DEMUX logic
-	
+	always@(posedge clk_mst) begin
+		always@(posedge clk_sys) begin
+			
+		end
+	end
 
 endmodule

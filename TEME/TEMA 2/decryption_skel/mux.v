@@ -45,4 +45,56 @@ module mux #(
 	
 	//TODO: Implement MUX logic here
 
+
+	always@(posedge clk)
+	begin
+		if (rst_n == 1)
+		begin
+			data_o <= 0;
+			valid_o<= 0;
+		end else begin
+			case(select)
+			2'b00: begin
+				if (valid0_i == 1)
+				begin
+					data_o <= data0_i;
+					valid_o<=valid0_i;
+				end
+				else 
+				begin 
+					data_o <= 0; 
+					valid_o<=valid0_i;
+				end
+			end
+			2'b01:begin
+				if (valid1_i == 1)
+				begin
+					data_o <= data1_i;
+					valid_o<=valid1_i;
+				end
+				else 
+				begin 
+					data_o <= 0; 
+					valid_o<=valid1_i;
+				end
+			end
+			2'b10:begin
+				if (valid2_i == 1)
+				begin
+					data_o <= data2_i;
+					valid_o<=valid2_i;
+				end 
+				else 
+				begin 
+					data_o <= 0; 
+					valid_o<=valid2_i;
+				end
+			end
+			default: begin
+				data_o <= 0;
+				valid_o<=0;
+			end
+		end
+	end
+
 endmodule
