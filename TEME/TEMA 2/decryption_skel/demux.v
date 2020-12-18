@@ -46,12 +46,128 @@ module demux #(
 		output reg     						valid2_o
     );
 	
-	
+	parameter S0 = 2'b00;
+	parameter S1 = 2'b01;
+	parameter S2 = 2'b10;
+	parameter S3 = 2'b11;
+
+	reg [1:0] state,nextstate;
 	// TODO: Implement DEMUX logic
-	always@(posedge clk_mst) begin
-		always@(posedge clk_sys) begin
-			
-		end
+	always @(posedge clk_sys, posedge rst_n)
+		if (rst_n)
+			state <= S0;
+		else 
+			state <= nextstate;
+		
+	always@(posedge clk_sys)
+	begin
+		case(select)
+			2'b00:begin
+				if (valid_i == 1)begin
+                        case (state)
+                            S0:
+                                begin 
+                                    nextstate = S1;
+                                    valid0_o <= 1;
+                                    data0_o <= data_i[31:24];
+                                end
+                            S1: 
+                                begin 
+                                    nextstate = S2;
+                                    valid0_o <= 1;
+                                    data0_o <= data_i[23:16];
+                                end
+                            S2: 
+                                begin 
+                                    nextstate = S3;
+                                    valid0_o <= 1;
+                                    data0_o <= data_i[15:8];
+                                end
+                            S3: 
+                                begin 
+                                    nextstate = S0;
+                                    valid0_o <= 1;
+                                    data0_o <= data_i[7:0];
+                                end
+                            default : nextstate <= S0;
+                        endcase
+                   end else
+                   begin
+                       valid0_o <= 0; 
+                   end
+               
+				end
+			2'b01:begin
+				if (valid_i == 1)begin
+                        case (state)
+                            S0:
+                                begin 
+                                    nextstate = S1;
+                                    valid1_o = 1;
+                                    data1_o = data_i[31:24];
+                                end
+                            S1: 
+                                begin 
+                                    nextstate = S2;
+                                    valid1_o = 1;
+                                    data1_o = data_i[23:16];
+                                end
+                            S2: 
+                                begin 
+                                    nextstate = S3;
+                                    valid1_o = 1;
+                                    data1_o = data_i[15:8];
+                                end
+                            S3: 
+                                begin 
+                                    nextstate = S0;
+                                    valid1_o = 1;
+                                    data1_o = data_i[7:0];
+                                end
+                            default : nextstate = S0;
+                        endcase
+                   end
+                   else
+                   begin
+                       valid1_o <= 0; 
+                   end
+				end
+			2'b10:begin
+				if (valid_i == 1)begin
+                        case (state)
+                            S0:
+                                begin 
+                                    nextstate = S1;
+                                    valid2_o = 1;
+                                    data2_o = data_i[31:24];
+                                end
+                            S1: 
+                                begin 
+                                    nextstate = S2;
+                                    valid2_o = 1;
+                                    data2_o = data_i[23:16];
+                                end
+                            S2: 
+                                begin 
+                                    nextstate = S3;
+                                    valid2_o = 1;
+                                    data2_o = data_i[15:8];
+                                end
+                            S3: 
+                                begin 
+                                    nextstate = S0;
+                                    valid2_o = 1;
+                                    data2_o = data_i[7:0];
+                                end
+                            default : nextstate = S0;
+                        endcase
+                   end
+                   else
+                   begin
+                       valid2_o <= 0; 
+                   end
+				end
+		endcase
 	end
 
 endmodule

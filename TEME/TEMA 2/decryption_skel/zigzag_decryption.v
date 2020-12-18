@@ -42,6 +42,11 @@ module zigzag_decryption #(
     );
 
 // TODO: Implement ZigZag Decryption here
-
+always@(*)
+begin
+    data_o = data_i;
+    valid_o = valid_i;
+    busy = 0;
+end
 
 endmodule
