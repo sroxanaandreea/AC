@@ -59,7 +59,7 @@ module demux #(
 		else 
 			state <= nextstate;
 		
-	always@(posedge clk_sys)
+	always@(posedge clk_mst)
 	begin
 		case(select)
 			2'b00:begin

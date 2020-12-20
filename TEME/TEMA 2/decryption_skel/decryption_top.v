@@ -50,25 +50,14 @@ module decryption_top#(
 		
     );
 	
-	wire [1:0] select;
+	wire [reg_width -1:0] select;
 	wire [SYS_DWIDTH - 1 : 0] data0_o,data1_o,data2_o,data0_i,data1_i,data2_i;
 	wire valid0_o,valid1_o,valid2_o,busyCE,busySH,busyZZ,valid0_i,valid1_i,valid2_i;
 	wire [reg_width - 1 : 0] caesar_key,scytale_key,zigzag_key;
 
 		
 	// TODO: Add and connect all Decryption blocks
-	demux dx(clk_sys,
-	           clk,mst,
-	           rst_n,
-	           select,
-	           data_i,
-	           valid_i,
-	           data0_o,
-	           valid0_o,
-	           data1_o,
-	           valid1_o,
-	           data2_o,
-	           valid2_o);
+	
 	           
 	decryption_regfile df(
                 // Clock and reset interface
@@ -87,7 +76,21 @@ module decryption_top#(
                 caesar_key,
                 scytale_key,
                 zigzag_key );
-                
+
+
+	demux dx(clk_sys,
+	           clk_mst,
+	           rst_n,
+	           select[1:0],
+	           data_i,
+	           valid_i,
+	           data0_o,
+	           valid0_o,
+	           data1_o,
+	           valid1_o,
+	           data2_o,
+	           valid2_o);			
+
     ceasar_decryption cr(clk_mst,
 			rst_n,
 			// Input interface
@@ -123,7 +126,7 @@ module decryption_top#(
 			data2_o,
 			valid2_o,
 			// Decryption Key
-			zigzag_key,
+			zigzag_key[7:0],
 			// Output interface
 			busyZZ,
 			data2_i,
@@ -132,7 +135,7 @@ module decryption_top#(
     mux mx(clk_mst,
 		rst_n,
 		//Select interface
-		select,
+		 select[1:0],
 		// Output interface
 		data_o,
 		valid_o,

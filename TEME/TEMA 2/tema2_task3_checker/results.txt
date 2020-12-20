@@ -1,1 +1,1 @@
- -1.00: failed to run test decryption_test_1, check compilation and execution logs
+-10.00: failed to synthesize, check synthesis log for errors
