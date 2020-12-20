@@ -50,6 +50,7 @@ module decryption_top#(
 		
     );
 	
+	// define outputurile care ca si wire  
 	wire [reg_width -1:0] select;
 	wire [SYS_DWIDTH - 1 : 0] data0_o,data1_o,data2_o,data0_i,data1_i,data2_i;
 	wire valid0_o,valid1_o,valid2_o,busyCE,busySH,busyZZ,valid0_i,valid1_i,valid2_i;
@@ -58,10 +59,10 @@ module decryption_top#(
 		
 	// TODO: Add and connect all Decryption blocks
 	
-	           
+	// apelez modulul de decriptare
 	decryption_regfile df(
                 // Clock and reset interface
-                clk_mst, 
+                clk_sys, 
                 rst_n,
                 // Register access interface
                 addr,
@@ -78,6 +79,7 @@ module decryption_top#(
                 zigzag_key );
 
 
+	// apelez demux-ul
 	demux dx(clk_sys,
 	           clk_mst,
 	           rst_n,
@@ -91,7 +93,8 @@ module decryption_top#(
 	           data2_o,
 	           valid2_o);			
 
-    ceasar_decryption cr(clk_mst,
+	//apelez ceasar
+    ceasar_decryption cr(clk_sys,
 			rst_n,
 			// Input interface
 			data0_o,
@@ -102,8 +105,9 @@ module decryption_top#(
 			busyCE,
 			data0_i,
 			valid0_i);
-			
-    scytale_decryption sd(clk_mst,
+
+	// apelez scytale	
+    scytale_decryption sd(clk_sys,
 			rst_n,
 			
 			// Input interface
@@ -119,8 +123,9 @@ module decryption_top#(
 		    valid1_i,
 			
 			busySH);
-			
-    zigzag_decryption zd(clk_mst,
+
+	// apelez zigzag	 	
+    zigzag_decryption zd(clk_sys,
 			 rst_n,
 			// Input interface
 			data2_o,
@@ -131,8 +136,9 @@ module decryption_top#(
 			busyZZ,
 			data2_i,
 		    valid2_i);
-		    
-    mux mx(clk_mst,
+
+	// apeelez modulul de mux	    
+    mux mx(clk_sys,
 		rst_n,
 		//Select interface
 		 select[1:0],
@@ -148,8 +154,8 @@ module decryption_top#(
 		
 		data2_i,
 		valid2_i);
-		
-     assign busy = busyCE ^ busySH ^ busyZZ;
-
+	
+	//fac sau intre busy -uri 
+    assign busy = busyCE | busySH | busyZZ;
 
 endmodule

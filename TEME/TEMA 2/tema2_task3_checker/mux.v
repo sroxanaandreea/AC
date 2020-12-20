@@ -45,17 +45,17 @@ module mux #(
 	
 	//TODO: Implement MUX logic here
 
-
+	// pe ciclu pozitiv de ceas 
 	always@(posedge clk)
 	begin
-		if (rst_n == 1)
-		begin
+		if (rst_n) // verific daca rst este activ 
+		begin//daca da scot 0 pe iesiri 
 			data_o <= 0;
 			valid_o<= 0;
 		end 
 		else 
-		begin
-			case(select)
+		begin// daca nu
+			case(select) // fac un case care imi scoate intrarea la iesire asociata 
 			2'b00: begin
 				if (valid0_i == 1)
 				begin
@@ -92,7 +92,7 @@ module mux #(
 					valid_o<= valid2_i;
 				end
 			end
-			default: begin
+			default: begin  // iar pe default scoate 0 
 				data_o <= 0;
 				valid_o<= 0;
 			end
@@ -101,4 +101,3 @@ module mux #(
 	end
 
 endmodule
-// [7:0] , [15:8], [23:16],[31:24]

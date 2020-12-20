@@ -46,24 +46,27 @@ module demux #(
 		output reg     						valid2_o
     );
 	
+    // am codificat starile 
 	parameter S0 = 2'b00;
 	parameter S1 = 2'b01;
 	parameter S2 = 2'b10;
 	parameter S3 = 2'b11;
 
+
 	reg [1:0] state,nextstate;
 	// TODO: Implement DEMUX logic
+    // am atribuit la state pe clk_sys sau reset daca reset este activ S1 alfel nextstate 
 	always @(posedge clk_sys, posedge rst_n)
 		if (rst_n)
 			state <= S0;
 		else 
 			state <= nextstate;
 		
-	always@(posedge clk_mst)
+	always@(posedge clk_mst) // pe ciclu pozitiv de clk_mst
 	begin
-		case(select)
+		case(select) // daca select este activ scot la out pe rand in functie de starea in care ma aflu 
 			2'b00:begin
-				if (valid_i == 1)begin
+				if (valid_i == 1)begin // doar dca valid_i == 1
                         case (state)
                             S0:
                                 begin 
